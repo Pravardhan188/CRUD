@@ -4,7 +4,8 @@ const mongoose = require('mongoose')
 const alienRouter = require('./route/controller')
 
 
-const url = 'mongodb://127.0.0.1:27017/cbit'
+//const url = 'mongodb://127.0.0.1:27017/cbit'
+const url = 'mongodb://127.0.0.1:27020,127.0.0.1:27021,127.0.0.1:27022/cbitit1?replicaSet=m101';
 const app = express()
 mongoose.connect(url)
 const con = mongoose.connection
